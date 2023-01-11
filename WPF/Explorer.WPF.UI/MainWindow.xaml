@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Explorer.WPF.UI"
         mc:Ignorable="d"
         WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
         >
     <Grid>
 
