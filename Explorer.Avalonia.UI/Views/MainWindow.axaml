@@ -6,12 +6,15 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Explorer.Avalonia.UI.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Explorer.Avalonia.UI">
+        Title="Explorer.Avalonia.UI"
+		WindowState="Maximized"
+		WindowStartupLocation="CenterScreen"
+		>
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
 
 </Window>
