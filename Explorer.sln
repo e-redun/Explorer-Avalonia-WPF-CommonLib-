@@ -10,10 +10,15 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Explorer.WPF.UI", "WPF\Explorer.WPF.UI\Explorer.WPF.UI.csproj", "{4D8E6079-5905-419A-ACB1-D335F6458A03}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Explorer.Avalonia.UI", "Explorer.Avalonia.UI\Explorer.Avalonia.UI.csproj", "{9A900BFA-02EB-43BE-9B68-6F479C7DDA7E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{55C4F840-3F3B-47F3-8971-AD7651ADC42B} = {55C4F840-3F3B-47F3-8971-AD7651ADC42B}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{E220E66B-D827-4108-9A94-035B9B7728AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Explorer.Shared.ViewModels", "Core\Explorer.Shared.ViewModels\Explorer.Shared.ViewModels.csproj", "{A9E2ED4B-8F24-48F3-A55A-96AFA5BAB196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib", "Core\TestLib\TestLib.csproj", "{55C4F840-3F3B-47F3-8971-AD7651ADC42B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{A9E2ED4B-8F24-48F3-A55A-96AFA5BAB196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9E2ED4B-8F24-48F3-A55A-96AFA5BAB196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9E2ED4B-8F24-48F3-A55A-96AFA5BAB196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55C4F840-3F3B-47F3-8971-AD7651ADC42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C4F840-3F3B-47F3-8971-AD7651ADC42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C4F840-3F3B-47F3-8971-AD7651ADC42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C4F840-3F3B-47F3-8971-AD7651ADC42B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +50,7 @@ Global
 		{4D8E6079-5905-419A-ACB1-D335F6458A03} = {DCCA62A8-F946-42BF-BAD3-D1F7A24E1782}
 		{9A900BFA-02EB-43BE-9B68-6F479C7DDA7E} = {6243D041-07B5-4EE9-ADBC-FBFFC7AADFE4}
 		{A9E2ED4B-8F24-48F3-A55A-96AFA5BAB196} = {E220E66B-D827-4108-9A94-035B9B7728AB}
+		{55C4F840-3F3B-47F3-8971-AD7651ADC42B} = {E220E66B-D827-4108-9A94-035B9B7728AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71EC290B-AA88-4B06-A748-2ED6C4AB6C78}

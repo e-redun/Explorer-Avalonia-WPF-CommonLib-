@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Explorer.Avalonia.UI.ViewModels;
 using Explorer.Avalonia.UI.Views;
+using Explorer.Shared.ViewModels;
 
 namespace Explorer.Avalonia.UI
 {
@@ -19,7 +20,7 @@ namespace Explorer.Avalonia.UI
             {
                 desktop.MainWindow = new MainWindow
                 {
-                    DataContext = new MainWindowViewModel(),
+                    DataContext = new MainViewModel(),
                 };
             }
 
