@@ -9,6 +9,6 @@
         WindowStartupLocation="CenterScreen"
         >
     <Grid>
-
+        <TextBlock Text="{Binding MainDiskName}"/>
     </Grid>
 </Window>
