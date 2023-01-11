@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Explorer.WPF.UI.ViewModels
+namespace Explorer.Shared.ViewModels
 {
-    internal class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel : INotifyPropertyChanged
     {
 		private string _mainDiskName;
 
@@ -31,7 +31,5 @@ namespace Explorer.WPF.UI.ViewModels
 		{
 			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
-
-
     }
 }

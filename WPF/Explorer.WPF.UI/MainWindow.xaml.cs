@@ -1,4 +1,4 @@
-﻿using Explorer.WPF.UI.ViewModels;
+﻿using Explorer.Shared.ViewModels;
 
 namespace Explorer.WPF.UI
 {
