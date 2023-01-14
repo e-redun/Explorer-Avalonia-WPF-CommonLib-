@@ -1,6 +1,6 @@
-﻿using System.Windows.Controls;
+using Avalonia.Controls;
 
-namespace Explorer.WPF.UI
+namespace Explorer.Avalonia.UI.Views
 {
     public partial class TestView : UserControl
     {

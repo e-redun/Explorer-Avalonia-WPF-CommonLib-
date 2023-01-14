@@ -33,4 +33,9 @@
     <ProjectReference Include="..\Core\Explorer.Shared.ViewModels\Explorer.Shared.ViewModels.csproj" />
     <ProjectReference Include="..\Core\TestLib\TestLib.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\TestView.axaml.cs">
+      <DependentUpon>TestView.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

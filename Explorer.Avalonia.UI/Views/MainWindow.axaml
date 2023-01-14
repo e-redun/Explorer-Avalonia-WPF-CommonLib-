@@ -8,16 +8,34 @@
         Title="Avalonia"
 		WindowState="Maximized"
 		WindowStartupLocation="CenterScreen"
-	    xmlns:vm="using:Explorer.Avalonia.UI.ViewModels"
-	    xmlns:vm2="using:Explorer.Shared.ViewModels"
-	    xmlns:vm3="clr-namespace:TestLib.ViewModels;assembly=TestLib"
+	    xmlns:vm="using:Explorer.Shared.ViewModels"
+	    xmlns:v="using:Explorer.Avalonia.UI.Views"
 		>
-	
+	    <!--xmlns:vm3="clr-namespace:TestLib.ViewModels;assembly=TestLib"-->
 
-	<Window.DataContext>
-		<vm3:MainViewModel/>
-	</Window.DataContext>
-	
-	<TextBlock Text="{Binding MainDiskName}"/>
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
 
+    <Window.DataTemplates>  <DataTemplate DataType="{x:Type vm:TestViewModel}">
+            <v:TestView/>
+        </DataTemplate>
+	</Window.DataTemplates>
+
+
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+
+		<TextBlock Text="{Binding MainDiskName}"
+                   Grid.Column="0"
+                   Background="LightGreen"
+                   />
+
+		<ContentControl Grid.Column="1"
+                        Content="{Binding TestVM}"
+                        />
+	</Grid>
 </Window>
