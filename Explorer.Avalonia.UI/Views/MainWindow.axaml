@@ -5,16 +5,19 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Explorer.Avalonia.UI.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Explorer.Avalonia.UI"
+        Title="Avalonia"
 		WindowState="Maximized"
 		WindowStartupLocation="CenterScreen"
+	    xmlns:vm="using:Explorer.Avalonia.UI.ViewModels"
+	    xmlns:vm2="using:Explorer.Shared.ViewModels"
+	    xmlns:vm3="clr-namespace:TestLib.ViewModels;assembly=TestLib"
 		>
-	    <!--xmlns:vm="TestLib.ViewModels;assembly=TestLib"-->
+	
 
-	<!--<Design.DataContext>
-        <vm:MainViewModel/>
-    </Design.DataContext>-->
-
+	<Window.DataContext>
+		<vm3:MainViewModel/>
+	</Window.DataContext>
+	
 	<TextBlock Text="{Binding MainDiskName}"/>
 
 </Window>

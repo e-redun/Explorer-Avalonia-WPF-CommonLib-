@@ -22,7 +22,7 @@ namespace TestLib.ViewModels
 
 		public MainViewModel()
 		{
-			MainDiskName = Environment.SystemDirectory;
+			MainDiskName = "4444444444444";
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged;

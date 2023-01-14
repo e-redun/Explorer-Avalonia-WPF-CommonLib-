@@ -20,6 +20,8 @@ namespace Explorer.Shared.ViewModels
 			}
 		}
 
+		public object TestVM { get; set; } = new TestViewModel();
+
 		public MainViewModel()
 		{
 			MainDiskName = Environment.SystemDirectory;

@@ -4,11 +4,38 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Explorer.WPF.UI"
+        xmlns:vm="clr-namespace:Explorer.Shared.ViewModels;assembly=Explorer.Shared.ViewModels"
+        xmlns:vm2="clr-namespace:TestLib.ViewModels;assembly=TestLib"
+        xmlns:v="clr-namespace:Explorer.WPF.UI"
         mc:Ignorable="d"
         WindowState="Maximized"
         WindowStartupLocation="CenterScreen"
+        Title="WPF"
         >
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:TestViewModel}">
+            <v:TestView/>
+        </DataTemplate>
+    </Window.Resources>
+        
+        
     <Grid>
-        <TextBlock Text="{Binding MainDiskName}"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Text="{Binding MainDiskName}"
+                   Grid.Column="0"
+                   Background="LightGreen"
+                   />
+        
+        <ContentControl Grid.Column="1"
+                        Content="{Binding TestVM}"
+                        />
     </Grid>
 </Window>

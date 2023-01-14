@@ -8,7 +8,7 @@ namespace Explorer.WPF.UI
         {
             InitializeComponent();
 
-            DataContext = new MainViewModel();
+         //   DataContext = new MainViewModel();
         }
     }
 }

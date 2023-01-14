@@ -20,7 +20,7 @@ namespace Explorer.Avalonia.UI
             {
                 desktop.MainWindow = new MainWindow
                 {
-                    DataContext = new MainViewModel(),
+                   // DataContext = new MainViewModel(),
                 };
             }
 
